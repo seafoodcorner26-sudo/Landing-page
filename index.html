@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapur Bumbu Laut - Savory Grill Seafood | Kerang Bakar Promo Launching</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        ocean: {
+                            900: '#0f172a',
+                            800: '#1e293b',
+                            700: '#0369a1',
+                            600: '#0284c7',
+                            50: '#f0f9ff'
+                        },
+                        flame: {
+                            600: '#ea580c',
+                            500: '#f97316',
+                            400: '#fb923c',
+                            100: '#ffedd5'
+                        },
+                        sand: {
+                            100: '#fef3c7',
+                            50: '#fffbeb'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-ocean {
+            background: linear-gradient(135deg, #0b132b 0%, #1c2541 50%, #0369a1 100%);
+        }
+        .gradient-fire {
+            background: linear-gradient(135deg, #ea580c 0%, #dc2626 100%);
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+        }
+        .card-glow:hover {
+            box-shadow: 0 10px 30px -10px rgba(249, 115, 22, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-flame-500 selection:text-white">
+
+    <!-- NAVBAR TOP -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-slate-900/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-flame-500 to-amber-400 flex items-center justify-center text-slate-900 font-extrabold text-xl shadow-lg shadow-flame-500/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid to-amber-900 fa-fire-burner"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-extrabold tracking-tight text-white block leading-tight">DAPUR BUMBU LAUT</span>
+                    <span class="text-xs text-flame-400 font-medium tracking-wider uppercase">Savory Grill Seafood</span>
+                </div>
+            </a>
+
+            <!-- Quick Info & Order Button desktop -->
+            <div class="hidden md:flex items-center gap-6">
+                <div class="text-right text-xs text-slate-300">
+                    <p class="flex items-center justify-end gap-1 font-semibold text-amber-300"><i class="fa-regular fa-clock"></i> 10.00 - 21.00 WITA</p>
+                    <p class="text-slate-400">Antiga • Padangbai • Manggis</p>
+                </div>
+                <a href="#order-form" class="px-5 py-2.5 rounded-full bg-gradient-to-r from-flame-500 to-flame-600 hover:from-flame-600 hover:to-red-600 text-white font-bold text-sm transition shadow-lg shadow-flame-500/30 flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>Pesan PO Sekarang</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden gradient-ocean">
+        <!-- Decorative Ambient Light -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-flame-500/15 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Content Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <!-- Launching Promo Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-flame-500/10 border border-flame-500/40 text-flame-400 font-bold text-xs uppercase tracking-widest animate-pulse">
+                        <span class="w-2 h-2 rounded-full bg-flame-500"></span>
+                        PROMO LAUNCHING • MINGGU PERTAMA
+                    </div>
+
+                    <!-- Main Title -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tight leading-none">
+                        KERANG BAKAR <br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-flame-400 via-amber-300 to-flame-500 text-glow">
+                            DAPUR BUMBU LAUT
+                        </span>
+                    </h1>
+
+                    <!-- Tagline -->
+                    <p class="text-xl sm:text-2xl text-amber-100/90 font-medium italic border-l-4 border-flame-500 pl-4 py-1 mx-auto lg:mx-0 max-w-xl">
+                        “Bumbu meresap, sari laut pilihan”
+                    </p>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0">
+                        Nikmati sensasi kerang bakar segar pilihan dipadu dengan racikan bumbu khas pesisir bali yang meresap hingga ke dalam daging. Dipanggang langsung secara kustom saat kamu pesan!
+                    </p>
+
+                    <!-- Price Highlight Box -->
+                    <div class="p-4 sm:p-5 rounded-2xl bg-slate-800/80 border border-slate-700/80 max-w-md mx-auto lg:mx-0 flex items-center justify-between shadow-2xl backdrop-blur-sm">
+                        <div>
+                            <span class="text-xs text-slate-400 block font-semibold uppercase tracking-wider">Harga Promo Spesial</span>
+                            <div class="flex items-baseline gap-3 mt-1">
+                                <span class="text-3xl sm:text-4xl font-extrabold text-amber-400">Rp 25.000</span>
+                                <span class="text-slate-500 line-through text-lg font-medium">Rp 35.000</span>
+                            </div>
+                        </div>
+                        <div class="px-4 py-2 rounded-xl bg-red-600 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-md transform rotate-2">
+                            <i class="fa-solid fa-fire mr-1"></i> HEMAT 10 RB!
+                        </div>
+                    </div>
+
+                    <!-- Call To Actions -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <a href="#order-form" class="px-8 py-4 rounded-xl bg-gradient-to-r from-flame-500 to-amber-500 hover:from-flame-600 hover:to-amber-600 text-slate-950 font-extrabold text-base transition transform hover:-translate-y-0.5 shadow-xl shadow-flame-500/25 flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-xl text-slate-950"></i>
+                            <span>Pesan via WhatsApp (PO)</span>
+                        </a>
+                        <a href="#varian" class="px-7 py-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold text-base border border-slate-700 transition flex items-center justify-center gap-2">
+                            <span>Pilih 3 Varian Rasa</span>
+                            <i class="fa-solid fa-chevron-down text-xs"></i>
+                        </a>
+                    </div>
+
+                    <!-- Quick Trust Badges -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 pt-4 text-xs text-slate-400 font-medium">
+                        <span class="flex items-center gap-2 text-amber-300">
+                            <i class="fa-solid fa-truck-fast text-flame-400"></i> Free Delivery Antiga, Padangbai & Manggis
+                        </span>
+                        <span class="flex items-center gap-2">
+                            <i class="fa-solid fa-utensils text-flame-400"></i> Pemesanan Sistem PO (Segar)
+                        </span>
+                    </div>
+
+                </div>
+
+                <!-- Right Visual Display Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Outer Glow Effect -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-flame-500 to-amber-400 rounded-3xl blur-lg opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        
+                        <div class="relative bg-slate-800 border border-slate-700 rounded-3xl overflow-hidden shadow-2xl">
+                            <!-- Banner Image Placeholder / Visual -->
+                            <div class="relative h-72 sm:h-80 bg-slate-950 overflow-hidden group">
+                                <img src="https://images.unsplash.com/photo-1565680018434-b513d5e5fd47?auto=format&fit=crop&w=800&q=80" 
+                                     alt="Kerang Bakar Dapur Bumbu Laut" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90"
+                                     onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/f97316?text=Kerang+Bakar+Lezat';">
+                                
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                                
+                                <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-slate-900/80 backdrop-blur-md text-amber-300 font-bold text-xs border border-amber-500/30">
+                                    <i class="fa-solid fa-star text-amber-400 mr-1"></i> Best Seller Launching
+                                </span>
+
+                                <span class="absolute bottom-4 left-4 right-4 text-white text-sm font-medium bg-slate-950/70 p-3 rounded-xl backdrop-blur-sm border border-slate-700/50">
+                                    🔥 Dibakar di atas bara api dengan sapuan bumbu rahasia berulang kali!
+                                </span>
+                            </div>
+
+                            <!-- Interactive Quick Spec -->
+                            <div class="p-6 space-y-4">
+                                <h3 class="text-xl font-bold text-white flex items-center justify-between">
+                                    <span>Porsi Kerang Bakar Spesial</span>
+                                    <span class="text-flame-400 text-sm font-normal">Fresh PO</span>
+                                </h3>
+
+                                <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                                    <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-700">
+                                        <div class="text-slate-400">Bahan</div>
+                                        <div class="font-bold text-white mt-0.5">Sari Laut Pilihan</div>
+                                    </div>
+                                    <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-700">
+                                        <div class="text-slate-400">Bumbu</div>
+                                        <div class="font-bold text-amber-300 mt-0.5">Meresap Maksimal</div>
+                                    </div>
+                                    <div class="p-2.5 rounded-xl bg-slate-900/70 border border-slate-700">
+                                        <div class="text-slate-400">Pengiriman</div>
+                                        <div class="font-bold text-emerald-400 mt-0.5">Free Ongkir*</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- VARIAN RASA SECTION -->
+    <section id="varian" class="py-20 bg-slate-950 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-flame-500 font-bold text-xs uppercase tracking-widest block mb-2">Sensasi Khas Pesisir</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">PILIHAN 3 VARIAN RASA</h2>
+                <p class="text-slate-400 mt-3 text-sm sm:text-base">Pilih bumbu favoritmu! Setiap varian diracik dengan bumbu rempah berkualitas tinggi yang meresap sempurna saat pembakaran.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Varian 1: BBQ -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 relative flex flex-col justify-between card-glow transition-all duration-300 hover:-translate-y-1">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 text-2xl font-bold">
+                            <i class="fa-solid fa-drumstick-bite"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-amber-400 uppercase tracking-wider">Varian 01</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">BBQ</h3>
+                            <p class="text-slate-400 text-sm mt-2">
+                                Rasa gurih smokey khas panggangan kayu manis & rempah. Cocok untuk yang menyukai cita rasa barbekyu klasik yang kaya aroma.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Aroma Smokey Mantap</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Gurih & Rich Taste</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Ramah Anak & Selera Umum</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectFlavorAndScroll('BBQ')" class="mt-8 w-full py-3 rounded-xl bg-slate-800 hover:bg-flame-500 text-slate-200 hover:text-slate-950 font-bold text-sm transition flex items-center justify-center gap-2 border border-slate-700">
+                        <span>Pilih Varian BBQ</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Varian 2: Pedas Manis -->
+                <div class="bg-slate-900 border-2 border-flame-500/60 rounded-2xl p-6 relative flex flex-col justify-between card-glow transition-all duration-300 hover:-translate-y-1 shadow-lg shadow-flame-500/10">
+                    <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-flame-500 to-red-600 text-white text-[10px] uppercase font-extrabold px-3 py-1 rounded-full tracking-widest shadow">
+                        Paling Favorit
+                    </div>
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-flame-500/20 border border-flame-500/40 flex items-center justify-center text-flame-400 text-2xl font-bold">
+                            <i class="fa-solid fa-pepper-hot"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-flame-400 uppercase tracking-wider">Varian 02</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Pedas Manis</h3>
+                            <p class="text-slate-400 text-sm mt-2">
+                                Perpaduan pedas nampol dari cabai segar pilihan dan Manis karamel yang menggugah selera. Sensasi meledak di lidah!
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Cabai Pilihan Segar</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Keseimbangan Pedas-Manis Pass</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Bikin Ketagihan</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectFlavorAndScroll('Pedas Manis')" class="mt-8 w-full py-3 rounded-xl bg-gradient-to-r from-flame-500 to-amber-500 text-slate-950 font-extrabold text-sm transition hover:opacity-95 flex items-center justify-center gap-2 shadow-md">
+                        <span>Pilih Pedas Manis</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Varian 3: Bumbu Bali -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 relative flex flex-col justify-between card-glow transition-all duration-300 hover:-translate-y-1">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 text-2xl font-bold">
+                            <i class="fa-solid fa-mortar-pestle"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">Varian 03</span>
+                            <h3 class="text-2xl font-bold text-white mt-1">Bumbu Bali</h3>
+                            <p class="text-slate-400 text-sm mt-2">
+                                Kaya akan rempah-rempah otentik khas pesisir Bali. Resep warisan bumbu racik segar yang meresap mendalam sampai ke sari lautnya.
+                            </p>
+                        </div>
+                        <ul class="text-xs text-slate-300 space-y-2 pt-2">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Rempah Otentik Bali</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Wangi Khas Pesisir</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-flame-500"></i> Cita Rasa Tradisional Premium</li>
+                        </ul>
+                    </div>
+                    <button onclick="selectFlavorAndScroll('Bumbu Bali')" class="mt-8 w-full py-3 rounded-xl bg-slate-800 hover:bg-flame-500 text-slate-200 hover:text-slate-950 font-bold text-sm transition flex items-center justify-center gap-2 border border-slate-700">
+                        <span>Pilih Bumbu Bali</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN & INFO LAYANAN -->
+    <section class="py-16 bg-slate-900 border-y border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-800/50 border border-slate-700/60">
+                    <div class="w-12 h-12 rounded-xl bg-flame-500/15 text-flame-400 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-fish"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg">Pesan Via PO</h4>
+                        <p class="text-slate-400 text-sm mt-1">Kerang baru dibakar setelah pemesanan masuk agar hidangan selalu segar, hangat, dan sari lautnya terjaga.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-800/50 border border-slate-700/60">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/15 text-emerald-400 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg">FREE DELIVERY</h4>
+                        <p class="text-slate-400 text-sm mt-1">Gratis ongkos kirim khusus area pengiriman: <strong class="text-amber-300">Antiga, Padangbai, dan Manggis</strong>.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-4 p-5 rounded-2xl bg-slate-800/50 border border-slate-700/60">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/15 text-sky-400 flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg">Jam Operasional</h4>
+                        <p class="text-slate-400 text-sm mt-1">Buka setiap hari siap melayani pesanan Anda mulai pukul <strong class="text-amber-300">10.00 - 21.00 WITA</strong>.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK ORDER FORM (WA INTEGRATION) -->
+    <section id="order-form" class="py-20 gradient-ocean relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="bg-slate-900 border border-slate-700 rounded-3xl p-6 sm:p-10 shadow-2xl backdrop-blur-md">
+                <div class="text-center max-w-xl mx-auto mb-10">
+                    <span class="px-3 py-1 rounded-full bg-flame-500/20 text-flame-400 font-bold text-xs uppercase tracking-wider">Formulir Pesan Cepat</span>
+                    <h2 class="text-3xl sm:text-4xl font-black text-white mt-3">FORMULIR PRE-ORDER (PO)</h2>
+                    <p class="text-slate-400 text-sm mt-2">Isi detail pesanan di bawah ini. Sistem akan otomatis memformat pesan WhatsApp resmi ke Dapur Bumbu Laut.</p>
+                </div>
+
+                <form id="waOrderForm" onsubmit="handleOrderSubmit(event)" class="space-y-6">
+                    
+                    <!-- Step 1: Pilih Rasa -->
+                    <div>
+                        <label class="block text-sm font-bold text-slate-200 mb-3">1. Pilih Varian Rasa Kerang Bakar</label>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                            <label class="relative flex items-center p-4 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:border-flame-500 transition">
+                                <input type="radio" name="variant" value="BBQ" class="text-flame-500 focus:ring-flame-500" checked onchange="calculateTotal()">
+                                <div class="ml-3">
+                                    <span class="block text-sm font-bold text-white">BBQ</span>
+                                    <span class="block text-xs text-slate-400">Gurih Smokey</span>
+                                </div>
+                            </label>
+
+                            <label class="relative flex items-center p-4 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:border-flame-500 transition">
+                                <input type="radio" name="variant" value="Pedas Manis" class="text-flame-500 focus:ring-flame-500" onchange="calculateTotal()">
+                                <div class="ml-3">
+                                    <span class="block text-sm font-bold text-white">Pedas Manis</span>
+                                    <span class="block text-xs text-flame-400 font-semibold">Pedas Karamel 🔥</span>
+                                </div>
+                            </label>
+
+                            <label class="relative flex items-center p-4 rounded-xl bg-slate-800 border border-slate-700 cursor-pointer hover:border-flame-500 transition">
+                                <input type="radio" name="variant" value="Bumbu Bali" class="text-flame-500 focus:ring-flame-500" onchange="calculateTotal()">
+                                <div class="ml-3">
+                                    <span class="block text-sm font-bold text-white">Bumbu Bali</span>
+                                    <span class="block text-xs text-emerald-400 font-semibold">Kaya Rempah 🌿</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Jumlah Porsi & Data Pemesan -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <!-- Qty -->
+                        <div>
+                            <label class="block text-sm font-bold text-slate-200 mb-2">2. Jumlah Porsi</label>
+                            <div class="flex items-center">
+                                <button type="button" onclick="updateQty(-1)" class="w-12 h-12 rounded-l-xl bg-slate-800 border border-slate-700 text-white font-bold text-xl hover:bg-slate-700">-</button>
+                                <input type="number" id="qtyInput" min="1" value="1" class="w-full h-12 bg-slate-950 border-y border-slate-700 text-center font-bold text-white text-lg focus:outline-none" readonly>
+                                <button type="button" onclick="updateQty(1)" class="w-12 h-12 rounded-r-xl bg-slate-800 border border-slate-700 text-white font-bold text-xl hover:bg-slate-700">+</button>
+                            </div>
+                            <p class="text-xs text-amber-400 mt-1.5"><i class="fa-solid fa-tag"></i> Harga Promo: Rp 25.000 / Porsi</p>
+                        </div>
+
+                        <!-- Nama Pemesan -->
+                        <div>
+                            <label for="custName" class="block text-sm font-bold text-slate-200 mb-2">3. Nama Pemesan</label>
+                            <input type="text" id="custName" required placeholder="Contoh: Budi Santoso" class="w-full h-12 px-4 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:ring-2 focus:ring-flame-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Area Pengiriman -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-200 mb-2">4. Wilayah Pengiriman</label>
+                            <select id="custArea" onchange="toggleCustomArea()" class="w-full h-12 px-4 rounded-xl bg-slate-800 border border-slate-700 text-white focus:ring-2 focus:ring-flame-500 focus:outline-none">
+                                <option value="Antiga (Free Delivery)">Antiga (FREE DELIVERY)</option>
+                                <option value="Padangbai (Free Delivery)">Padangbai (FREE DELIVERY)</option>
+                                <option value="Manggis (Free Delivery)">Manggis (FREE DELIVERY)</option>
+                                <option value="Lainnya">Lainnya (Konfirmasi via WA)</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label for="custAddress" class="block text-sm font-bold text-slate-200 mb-2">5. Alamat Lengkap & Patokan</label>
+                            <input type="text" id="custAddress" required placeholder="Jl. Raya Pantai No. 12, dekat toko..." class="w-full h-12 px-4 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:ring-2 focus:ring-flame-500 focus:outline-none">
+                        </div>
+                    </div>
+
+                    <!-- Catatan Tambahan -->
+                    <div>
+                        <label for="custNotes" class="block text-sm font-bold text-slate-200 mb-2">Catatan Pemesanan (Opsional)</label>
+                        <input type="text" id="custNotes" placeholder="Contoh: Minta pedas banget / dipanggang agak garing..." class="w-full h-12 px-4 rounded-xl bg-slate-800 border border-slate-700 text-white placeholder-slate-500 focus:ring-2 focus:ring-flame-500 focus:outline-none">
+                    </div>
+
+                    <!-- Ringkasan Total & Submit -->
+                    <div class="pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-6">
+                        <div>
+                            <span class="text-xs text-slate-400 block font-medium">ESTIMASI TOTAL HARGA</span>
+                            <span id="totalPriceDisplay" class="text-3xl font-black text-amber-400">Rp 25.000</span>
+                            <span class="text-xs text-emerald-400 block mt-0.5" id="deliveryNote"><i class="fa-solid fa-circle-check"></i> Bebas Ongkir Area Antiga, Padangbai & Manggis</span>
+                        </div>
+
+                        <button type="submit" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-extrabold text-base transition shadow-xl shadow-emerald-500/20 flex items-center justify-center gap-3">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i>
+                            <span>KIRIM PESANAN KE WHATSAPP</span>
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER & SOSIAL MEDIA -->
+    <footer class="bg-slate-950 border-t border-slate-800 pt-16 pb-12 text-slate-400 text-sm">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                
+                <!-- Brand Info -->
+                <div class="md:col-span-2 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-flame-500 to-amber-400 flex items-center justify-center text-slate-900 font-extrabold text-lg">
+                            <i class="fa-solid fa-fire-burner"></i>
+                        </div>
+                        <span class="text-lg font-extrabold text-white tracking-tight">DAPUR BUMBU LAUT</span>
+                    </div>
+                    <p class="text-slate-400 text-sm max-w-sm">
+                        Kuliner khas pesisir penyaji Kerang Bakar pilihan dengan 3 rasa istimewa (BBQ, Pedas Manis, Bumbu Bali). Bumbu meresap, sari laut pilihan.
+                    </p>
+                    <div class="pt-2 text-xs text-amber-300">
+                        <p><i class="fa-solid fa-clock mr-1"></i> Jam Buka: 10.00 - 21.00 WITA</p>
+                    </div>
+                </div>
+
+                <!-- Media Sosial -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Ikuti Kami</h4>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="https://tiktok.com" target="_blank" class="hover:text-flame-400 transition flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-white"><i class="fa-brands fa-tiktok"></i></span>
+                                <span>@dapur bumbu laut</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.com" target="_blank" class="hover:text-flame-400 transition flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-sky-500"><i class="fa-brands fa-facebook-f"></i></span>
+                                <span>Dapur Bumbu Laut</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://instagram.com" target="_blank" class="hover:text-flame-400 transition flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-pink-500"><i class="fa-brands fa-instagram"></i></span>
+                                <span>@dapur bumbu laut</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kontak & Layanan -->
+                <div>
+                    <h4 class="text-white font-bold mb-4 uppercase text-xs tracking-wider">Kontak PO</h4>
+                    <p class="text-xs text-slate-400 mb-2">Layanan Pemesanan Pre-Order (PO):</p>
+                    <a href="https://wa.me/6282326389868" target="_blank" class="text-amber-300 font-bold text-base hover:underline flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg text-emerald-400"></i>
+                        <span>+62 823-2638-9868</span>
+                    </a>
+                    <div class="mt-4 p-3 rounded-xl bg-slate-900 border border-slate-800 text-xs">
+                        <p class="font-bold text-slate-300">Area Free Delivery:</p>
+                        <p class="text-slate-400">Antiga • Padangbai • Manggis</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>&copy; 2026 Dapur Bumbu Laut. All rights reserved.</p>
+                <p>Savory Grill Seafood • Promo Launching Minggu Pertama</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON (MOBILE & DESKTOP) -->
+    <a href="https://wa.me/6282326389868?text=Halo%20Dapur%20Bumbu%20Laut,%20saya%20ingin%20tanya%20menu%20Kerang%20Bakar%20Promo!" 
+       target="_blank" 
+       aria-label="Pesan via WhatsApp"
+       class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-emerald-500 hover:bg-emerald-600 text-white shadow-2xl flex items-center justify-center transition-transform hover:scale-110 group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-500 ease-in-out text-sm font-bold pl-0 group-hover:pl-3">
+            Pesan PO WhatsApp
+        </span>
+    </a>
+
+    <!-- JAVASCRIPT CORE LOGIC -->
+    <script>
+        const UNIT_PRICE = 25000;
+        let currentQty = 1;
+
+        function updateQty(change) {
+            currentQty += change;
+            if (currentQty < 1) currentQty = 1;
+            document.getElementById('qtyInput').value = currentQty;
+            calculateTotal();
+        }
+
+        function calculateTotal() {
+            const total = currentQty * UNIT_PRICE;
+            const formatted = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                maximumFractionDigits: 0
+            }).format(total);
+
+            document.getElementById('totalPriceDisplay').innerText = formatted;
+        }
+
+        function selectFlavorAndScroll(flavorName) {
+            // Set radio button
+            const radios = document.getElementsByName('variant');
+            for (let radio of radios) {
+                if (radio.value === flavorName) {
+                    radio.checked = true;
+                    break;
+                }
+            }
+            calculateTotal();
+            
+            // Scroll to order form
+            const orderFormSection = document.getElementById('order-form');
+            if (orderFormSection) {
+                orderFormSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function toggleCustomArea() {
+            const area = document.getElementById('custArea').value;
+            const deliveryNote = document.getElementById('deliveryNote');
+            if (area.includes('Free Delivery')) {
+                deliveryNote.innerHTML = '<i class="fa-solid fa-circle-check"></i> Bebas Ongkir Area Antiga, Padangbai & Manggis';
+                deliveryNote.className = 'text-xs text-emerald-400 block mt-0.5';
+            } else {
+                deliveryNote.innerHTML = '<i class="fa-solid fa-circle-info"></i> Ongkir disesuaikan via WhatsApp';
+                deliveryNote.className = 'text-xs text-amber-400 block mt-0.5';
+            }
+        }
+
+        function handleOrderSubmit(event) {
+            event.preventDefault();
+
+            // Fetch Form Data
+            const selectedVariant = document.querySelector('input[name="variant"]:checked').value;
+            const qty = document.getElementById('qtyInput').value;
+            const custName = document.getElementById('custName').value.trim();
+            const custArea = document.getElementById('custArea').value;
+            const custAddress = document.getElementById('custAddress').value.trim();
+            const custNotes = document.getElementById('custNotes').value.trim();
+            const totalPrice = currentQty * UNIT_PRICE;
+
+            const formattedTotal = new Intl.NumberFormat('id-ID', {
+                style: 'currency',
+                currency: 'IDR',
+                maximumFractionDigits: 0
+            }).format(totalPrice);
+
+            // Construct WhatsApp Message
+            let message = `Halo *Dapur Bumbu Laut*! Saya mau pesan Kerang Bakar (Promo Launching):\n\n`;
+            message += `📋 *RINCIAN PESANAN*\n`;
+            message += `• Varian Rasa: *${selectedVariant}*\n`;
+            message += `• Jumlah: *${qty} Porsi*\n`;
+            message += `• Total Harga: *${formattedTotal}*\n\n`;
+            message += `👤 *DATA PEMESAN*\n`;
+            message += `• Nama: ${custName}\n`;
+            message += `• Wilayah: ${custArea}\n`;
+            message += `• Alamat Lengkap: ${custAddress}\n`;
+            if (custNotes) {
+                message += `• Catatan: ${custNotes}\n`;
+            }
+            message += `\nMohon diproses untuk Pre-Order (PO). Terima kasih!`;
+
+            // Open WhatsApp
+            const waNumber = "6282326389868";
+            const encodedMessage = encodeURIComponent(message);
+            const waUrl = `https://wa.me/${waNumber}?text=${encodedMessage}`;
+
+            window.open(waUrl, '_blank');
+        }
+
+        // Initialize Total on Load
+        window.onload = function() {
+            calculateTotal();
+        }
+    </script>
+</body>
+</html>
